@@ -13,7 +13,7 @@ h2{
 font-size:2rem;
 }
 body {
-background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background: linear-gradient(-45deg, #f0987d, #f086af, #13f5c0);
 background-size: 400% 400%;
 animation: gradient 15s ease infinite;
 }
