@@ -61,14 +61,14 @@ background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん�
 #menu-btn-check:checked ~ .menu-btn span::before {bottom:0;transform:rotate(45deg)}
 #menu-btn-check:checked ~ .menu-btn span::after {top:0;transform: rotate(-45deg)}
 #menu-btn-check {display:none}
-.menu-content {width:100%;height:100%;position:fixed;top:0;left:100%;z-index:80;background-color:#79d3d9;transition:all 0.6s}
+.menu-content {width:100%;height:100%;position:fixed;top:0;left:100%;z-index:80;background-color:#b0c2c3;transition:all 0.6s}
 #menu-btn-check:checked ~ .menu-content {left: 50%;/*メニューを画面内へ*/}
 .menu-content ul {padding: 70px 10px 0}
 .menu-content ul li {border-bottom:solid 1px #ffffff;list-style:none}
 .menu-content ul li a {display: block;width:100%;font-size:15px;box-sizing:border-box;color:#ffffff;text-decoration:none;padding: 9px 15px 10px 0;position:relative}
 .menu-content ul li a::before {content: "";width:7px;height:7px;border-top:solid 2px #ffffff;border-right:solid 2px #ffffff;transform:rotate(45deg);position: absolute;right:11px;top:16px}
 @media screen and (max-width:480px) { /*　画面サイズが480pxからはここを読み込む　*/.text-box{display:block;}}
-.header_menu a:hover {background-color:#51b3c9;color:#f3f3f3;font-weight:bold}
+.header_menu a:hover {background-color:#8f9799;color:#f3f3f3;font-weight:bold}
 .header_menu a{color:#fefefe;display:inline-block;text-decoration:none;line-height:60px;height:60px;padding:0 5px;font-size:0.8em}
 #loading {width:100vw;height:100vh;background:#ada3a3;position:fixed;top:0;left:0;z-index:10}
 #loading_barWrap {width:30vw;height:calc(1rem + 5px);position:fixed;top:0;right:0;bottom:0;left:0;margin:auto;}
