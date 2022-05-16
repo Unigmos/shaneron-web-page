@@ -1,0 +1,147 @@
+body{background:#fffcfc;margin:0}
+.site-headfooter{box-shadow:0px 0px 20px rgba(0, 0, 0, 0.20);background:#303030;display:flex;padding:0;position:fixed;justify-content:space-between;width:100%;max-height:60px;z-index:12}
+.site-logo img{margin:5px 0px 5px 5px;height:50px;width:auto}
+.site-logo{margin:0 0 0 0px;}
+@font-face {
+font-family: 'MyFont';
+src: url(../font/Audrey-Normal.otf);
+}	
+body {
+font-family: MyFont,'Yu Gothic';
+}
+h2{
+font-size:2rem;
+}
+body {
+background: linear-gradient(-45deg, #f1f3dc, #f0dae2, #c1f5e9);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+@keyframes animate {
+0%{transform: translateY(0) rotate(0deg);opacity:1;border-radius:0}
+100%{transform: translateY(-2000px) rotate(720deg);opacity:0;border-radius:50%}
+}
+.youtube-icon{width:80%;height:auto;box-sizing:border-box;border-radius:5px}
+.text-box{padding:80px 3% 20px 3%;margin:0 1% 20px 1%;color:#020202}
+.image-box{padding:10px 0;display:flex;justify-content:center;align-items:center}
+.image-left-box{padding:20px 0 0 50px;min-width:0;word-break:break-all}
+.menu-btn:hover {background-color:#8c8c8c;color:#f3f3f3}
+.menu-btn {position:fixed;top:0px;right:0px;display:flex;height:60px;width:60px;justify-content:center;align-items:center;z-index:90;background-color:#303030}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {content:'';display: block;height:3px;width:25px;border-radius:3px;background-color: #ffffff;position: absolute}
+.menu-btn span:before {bottom:8px}
+.menu-btn span:after {top:8px}
+#menu-btn-check:checked ~ .menu-btn span {
+background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {bottom:0;transform:rotate(45deg)}
+#menu-btn-check:checked ~ .menu-btn span::after {top:0;transform: rotate(-45deg)}
+#menu-btn-check {display:none}
+.menu-content {width:100%;height:100%;position:fixed;top:0;left:100%;z-index:80;background-color:#b0c2c3;transition:all 0.6s}
+#menu-btn-check:checked ~ .menu-content {left: 50%;/*メニューを画面内へ*/}
+.menu-content ul {padding: 70px 10px 0}
+.menu-content ul li {border-bottom:solid 1px #ffffff;list-style:none}
+.menu-content ul li a {display: block;width:100%;font-size:15px;box-sizing:border-box;color:#ffffff;text-decoration:none;padding: 9px 15px 10px 0;position:relative}
+.menu-content ul li a::before {content: "";width:7px;height:7px;border-top:solid 2px #ffffff;border-right:solid 2px #ffffff;transform:rotate(45deg);position: absolute;right:11px;top:16px}
+@media screen and (max-width:480px) { /*　画面サイズが480pxからはここを読み込む　*/.text-box{display:block;}}
+.header_menu a:hover {background-color:#8f9799;color:#f3f3f3;font-weight:bold}
+.header_menu a{color:#fefefe;display:inline-block;text-decoration:none;line-height:60px;height:60px;padding:0 5px;font-size:0.8em}
+#loading {width:100vw;height:100vh;background:#ada3a3;position:fixed;top:0;left:0;z-index:10}
+#loading_barWrap {width:30vw;height:calc(1rem + 5px);position:fixed;top:0;right:0;bottom:0;left:0;margin:auto;}
+#loading_bar {width:0;height:5px;background:#fefefe;transition-duration:1s;border-radius:3px}
+.text {text-align:center;color:#fefefe}
+.loadingNone {animation:loadingAnime 1s forwards}
+@keyframes loadingAnime {
+	0% {opacity:1}
+	99% {opacity:0}
+	100% {opacity:0;display:none}
+}
+.introduction-box{display:flex;justify-content:center;align-items:center;height:250px;opacity:1;transform:translate(0, 50px);transition:all 500ms}
+.introduction-title{text-align:center;width:50%}
+.introduction-sentence{width:50%}
+
+.fade-object.show{opacity:1;transform:translate(0, 0)}
+
+.last-update{margin-left:70%}
+
+.portfolio-title{
+	h1{
+		font-family: MyFont,'Yu Gothic';
+	}
+}
+
+.template-box{
+	display: flex;
+	width: 100%;
+	justify-content:center;
+	align-items:center;
+	height:250px;
+	margin: 20px;
+	font-family: "Yu Gothic", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	.template-image{
+		width: 40%;
+		margin-right: 1%;
+		object-fit: cover;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.template-content{
+		.template-title{
+			h2{
+				font-family: MyFont,'Yu Gothic';
+				margin: 3px 0;
+			}
+		}
+		.template-sentence{
+			p{
+				margin: 3px 0;
+			}
+		}
+		.template-link{
+			display: flex;
+			margin-right: 2px;
+			.template-button{
+				text-decoration: none;
+				position: relative;
+				padding: 2px 5px;
+				text-align: center;
+				transition: ease .3s;
+				font-weight: bold;
+			}
+			.under-line{
+				&:before{
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					border-bottom: solid 2px #020202;
+					width: 100%;
+					height: 100%;
+					transition: transform .5s cubic-bezier(.02, .94, .57, .96) 0s;
+					transform: scale(0, 1);
+					transform-origin: right top;
+				}
+				&:hover{
+					&:before{
+						transform-origin: left top;
+						transform: scale(1, 1);
+					}
+				}
+			}
+		}
+	}
+}
