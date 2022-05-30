@@ -33,7 +33,7 @@ background-position: 0% 50%;
 100%{transform: translateY(-2000px) rotate(720deg);opacity:0;border-radius:50%}
 }
 .youtube-icon{width:80%;height:auto;box-sizing:border-box;border-radius:5px}
-.text-box{padding:80px 3% 20px 3%;margin:0 1% 20px 1%;color:#020202}
+.text-box{padding:20px 3% 80px 3%;margin:0 1% 20px 1%;color:#020202}
 .image-box{padding:10px 0;display:flex;justify-content:center;align-items:center}
 .image-left-box{padding:20px 0 0 50px;min-width:0;word-break:break-all}
 .menu-btn:hover {background-color:#8c8c8c;color:#f3f3f3}
@@ -97,6 +97,7 @@ background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん�
 		img{
 			width: 100%;
 			height: auto;
+			border-radius:3px;
 		}
 	}
 	.template-content{
@@ -109,6 +110,7 @@ background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん�
 		.template-sentence{
 			p{
 				margin: 3px 0;
+				word-break: break-all;
 			}
 		}
 		.template-link{
@@ -129,6 +131,7 @@ background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん�
 					top: 0;
 					left: 0;
 					border-bottom: solid 2px #020202;
+					background-color: rgba($color: #adadad, $alpha: 0.2);
 					width: 100%;
 					height: 100%;
 					transition: transform .5s cubic-bezier(.02, .94, .57, .96) 0s;
@@ -143,5 +146,12 @@ background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん�
 				}
 			}
 		}
+	}
+}
+
+.main-container{
+	margin: 3% 5%;
+	.portfolio-title{
+		font-size: 30px;
 	}
 }
