@@ -107,3 +107,5 @@ background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん�
 .fade-object.show{opacity:1;transform:translate(0, 0)}
 
 .last-update{margin-left:70%}
+
+footer{text-align: center;color:#fefefe;}
