@@ -1,4 +1,4 @@
 # shaneron-web-page<br>
 
-「 https://shaneron-web-site.web.app/ 」とか<br>
-「 https://shaneron-web-site.web.app/profile/profile.html 」のHTMLコード
+<a href="https://shaneron-web-site.web.app/">https://shaneron-web-site.web.app/</a><br>
+とその関連サイトのソース
